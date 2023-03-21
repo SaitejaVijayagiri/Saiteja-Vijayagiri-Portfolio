@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Saiteja Vijayagiri</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8dab840634.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/LOGO.png" class="LOGO">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Hello, It's Me</p>
+                <h1><span>Saiteja Vijayagiri</span><br>And I'm a Full Stack Developer</h1>
+                <a href="Images/RESUME - SAITEJA VIJAYAGIRI.pdf" class="btn">View Resume</a>
+            </div>    
+        </div>
+    </div>
+    <!-----------------about---------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/Saiteja Passphoto.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Seeking a position to utilize my skills and abilities in the computer science that offers 
+                    professional growth while being resourceful , innovative and flexible.</p>
+            
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('projects')">Projects</p>
+                        <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>Bachelor of Technology - Btech (2018-2022)</span><br>SVS Group of Institutions<br>Branch - Computer Science and Engineering<br>CGPA - 6.75<li>
+                            <li><span>Intermediate - 12th Standard (2016-2018)</span><br>Sri Chaitanya Junior College<br>Telangana State Board of Intermediate Education(TSBIE)<br>Branch - Mathematics,Physics,Chemistry(MPC)<br>Percentage - 83%<li>
+                            <li><span>SSC - 10th Standard (2015-2016)</span><br>Kerala English Medium High School<br>Telangana State Board of Secondary Education(TSBSE)<br>CGPA - 8.3<li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Future Ready Talent virtual Intern(Microsoft)(Jan 2022 - June 2022)</span><br>I've finished the Future Ready Talent Virtual Internship Program, which is sponsored by Microsoft, FutureSkills Prime, AICTE, Quess Corp Limited, GitHub, and EY.<li>
+                            <li><span>Goldman Sachs Engineering Virtual Program intern(July 2022)</span><br><li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Technical Skills</span><br>C<br>C++<br>Java<br>Python<br>Javascript<br>HTML<br>CSS<li>
+                            <li><span>Soft Skills</span><br>Team Work<br>Problem Solving<br>Communication<br>Adaptability<br>Time management<li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="projects">
+                        <ul>
+                            <li><span>Btech - Final Year Project</span><br>Object Detection Using YOLOv3<br>Object detection is a computer vision technique for locating instances of objects in images or Videos. YOLOV3 (You Only Look Once Version 3) is a real-time object detection algorithm. That identifies specific objects in videos, live feeds or images. The YOLO machine learning algorithm uses features learned by a deep convolutional neural network to detect an object.<li>
+                            <li><span>Microsoft - Future Ready Talent Virtual Intern</span><br> Motor cycle website using CSS , HTML , Javascript . Its helps the customer to find the latest bikes in my website . In this website I make four pages named home ,about ,specials , contact. Its look like a professional website . I am trying to solve the problems like in these days we are searching trending bikes at low cost and to deliver that bike at doorstep. So i make a web app where i try to give every motor cycle details.My project helps both the customer and seller. Like for seller I create a very beautiful user design that attract customer easily and also helps the customer to get their loved bike in their doorsteps.
+                                    This project is deployed in github and Azure using static web apps.<br><a href="https://brave-river-055603210.1.azurestaticapps.net" class="btn">Click here to visit website</a>
+                                    <li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li>Listening to Music<br>Watching TV<br>Playing Online Games<li>
+                        </ul>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+    <!-----------------------Services---------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2> 
+                    <p>Creating a visually appealing and functional layout for the website, including selecting appropriate colors, fonts, and images.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX Design</h2> 
+                    <p>Creating visually appealing designs for the interface, such as selecting appropriate colors, fonts, and images, and designing icons, buttons, and other graphical elements.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2> 
+                    <p>Building the app's functionality, including coding and programming, creating user interfaces, and integrating content management systems.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------portfolio----------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/work-3.png">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            Download it from play store.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a> 
+        </div>
+    </div>
+    <!----------------------------------contact---------------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> saitejavijayagiri@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> +919014836399</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/saiteja.sai.165?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://instagram.com/saiteja_vijayagiri?igshid=ZDdkNTZiNTM="><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/saiteja-vijayagiri-750509201"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://t.me/saitejavijayagiri"><i class="fa-brands fa-telegram"></i></a>
+                    </div>
+                    <a href="Images/RESUME - SAITEJA VIJAYAGIRI.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Saiteja Vijayagiri <i class="fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwxkTSvy6ck1Ot_edrkKnDsR0m8PtNxfME8JT5rDfn9wnEQKCorBLMGCM2hlLOZBVIhrw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent sucessfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                } ,5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
